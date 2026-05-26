@@ -8,8 +8,25 @@ An end-to-end Machine Learning project for **customer segmentation** and **perso
 - Cosine Similarity
 - Power BI Dashboard Visualization
 
----
----
+# SQL Data Analysis
+
+The project also uses SQL queries to analyze:
+- Customer segmentation results
+- Spending and payment behavior
+- Credit utilization
+- Recommendation performance
+
+## Example Query
+
+```sql
+SELECT
+    SEGMENT,
+    AVG(SHOPPING_VALUE) AS avg_spending,
+    AVG(PAYMENT_RATIO) AS avg_payment_ratio
+FROM CREDIT_USE_CUSTOMER_SEGMENTED
+GROUP BY SEGMENT
+ORDER BY avg_spending DESC;
+```
 
 # Star Schema Data Model
 

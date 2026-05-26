@@ -14,19 +14,19 @@ An end-to-end Machine Learning project for **customer segmentation** and **perso
 
 ## Customer Overview Dashboard
 
-![Customer Overview](images/customer_overview.png)
+![Customer Overview](images/Customer_Overview.png)
 
 ---
 
 ## VIP Customer Dashboard
 
-![VIP Dashboard](images/vip_dashboard.png)
+![VIP Dashboard](images/VIP_Dashboard.png)
 
 ---
 
 ## Customer Lookup Dashboard
 
-![Customer Lookup](images/customer_lookup.png)
+![Customer Lookup](images/Customer_Lookup.png)
 
 ---
 

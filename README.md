@@ -9,7 +9,55 @@ An end-to-end Machine Learning project for **customer segmentation** and **perso
 - Power BI Dashboard Visualization
 
 ---
+---
 
+# Star Schema Data Model
+
+This project also builds a **Star Schema Data Model** to support dashboard visualization and analytical reporting in Power BI.
+
+The Star Schema design helps organize customer, product, promotion, branch, and recommendation data into a structured analytical model. This makes it easier to create relationships, filter data, and analyze customer segments and recommended programs.
+
+## Data Model Preview
+
+![Star Schema Data Model](images/star_schema_data_model.png)
+
+## Main Tables
+
+### Fact Tables
+
+- **FACT_CUSTOMER_SEGMENT**
+  - Stores customer segmentation results generated from the GMM model.
+  - Includes customer ID, segment ID, segment name, and key behavioral indicators.
+
+- **FACT_RECOMMENDATION_PROGRAMS**
+  - Stores recommended promotional programs for each customer.
+  - Includes customer ID, campaign ID, similarity score, ranking, and recommendation type.
+
+### Dimension Tables
+
+- **DIM_CUSTOMER_SEGMENT**
+  - Describes each customer segment such as VIP customers, inactive customers, potential customers, and small retail customers.
+
+- **DIM_PRODUCT**
+  - Contains product information used in the recommendation system.
+
+- **DIM_CMPN**
+  - Contains promotional campaign information, including campaign name and campaign description.
+
+- **DIM_BRANCH**
+  - Stores branch and sub-branch information for customer location analysis.
+
+## Purpose of the Data Model
+
+The Star Schema is designed to:
+
+- Connect customer segmentation results with recommendation outputs
+- Support Power BI dashboard filtering and drill-down analysis
+- Enable customer-level and segment-level performance tracking
+- Improve the readability and scalability of the analytical model
+- Support business users in understanding which campaigns are suitable for each customer group
+
+---
 # Dashboard Preview
 
 ## Customer Overview Dashboard
